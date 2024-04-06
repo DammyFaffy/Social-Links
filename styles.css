@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Custom';
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Custom2';
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Custom3';
+    src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Custom4';
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: hsl(0, 0%, 100%);
+}
+
+.container{
+    text-align: center;
+    width: 400px;
+    height: 700px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: 'Custom';
+    padding-bottom: 10px;
+}
+
+h4{
+    font-family: 'Custom3';
+    color: hsl(75, 94%, 57%);
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 100;
+    font-family: 'Custom2';
+}
+
+.btns{
+    padding: 10px;
+}
+
+.btns button{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-family: 'Custom4';
+    border: none;
+    cursor: pointer;
+}
+
+.btns button:hover{
+    color: grey;
+    background-color: hsl(75, 94%, 57%);
+}
+
+@media screen and (max-width: 600px) {  
+    
+    .container{
+        width: 90%;
+        height: 70%;
+        overflow: hidden;
+        height: auto;
+    }
+
+    .btns{
+        padding: 10px;
+    }
+
+    .btns button{
+        margin: 5px;
+        width: 100%;
+    }
+
+    .myimg{
+        height: 80px;
+        width: 80px;
+        margin: 10px;
+    }
+}
